@@ -18,6 +18,9 @@
     content: '';
     margin-right: 1rem;
   }
+  [data-theme=dark] .title-square:before {
+    background: #fff;
+  }
 }
 
 a {

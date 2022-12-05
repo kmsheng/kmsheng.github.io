@@ -13,7 +13,7 @@ const [, owner, name, type, num] = props.item.url.match(/https:\/\/github.com\/(
     <div>
       <a :href="item.url" target="_blank">{{ owner }} / {{ name }}</a>
       <div class="text-black text-sm">{{ item.date }}</div>
-      <div class="mt-1">{{ item.title }}</div>
+      <div class="font-medium text-gray-700">{{ item.title }}</div>
     </div>
   </div>
 </template>
