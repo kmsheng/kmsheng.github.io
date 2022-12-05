@@ -27,3 +27,7 @@ a {
   --theme-link-color: #0074cc;
   color: var(--theme-link-color);
 }
+
+[data-theme=dark] a {
+  --theme-link-color: #8b8dc3;
+}
