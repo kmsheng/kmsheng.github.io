@@ -1,6 +1,21 @@
 <script setup>
+import { useHead } from '@vueuse/head'
 import Theme from '~/models/Theme'
 onBeforeMount(() => Theme.init())
+
+useHead({
+  title: 'kmsheng\'s portfolio',
+  meta: [{
+    name: 'og:image',
+    content: ''
+  }, {
+    name: 'og:title',
+    content: 'kmsheng\'s portfolio'
+  }, {
+    name: 'og:description',
+    content: 'Craft solid and scalable frontend products with great user experiences.'
+  }]
+})
 </script>
 
 <template>
