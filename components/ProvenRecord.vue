@@ -5,11 +5,11 @@ const props = defineProps({
     required: true
   }
 })
-const [/* all */, owner, name, /* type */, /* num */] = props.item.url.match(/https:\/\/github.com\/([^/]+)\/([^/]+)\/([^/]+)\/([^/]+)/)
+const [/*all*/, owner, name, /*type*/, /*num*/] = props.item.url.match(/https:\/\/github.com\/([^/]+)\/([^/]+)\/([^/]+)\/([^/]+)/)
 </script>
 
 <template>
-  <div class="flex justify-between even:bg-slate-50 dark:even:bg-[#262626] p-2 rounded">
+  <div class="flex justify-between even:bg-slate-50 dark:even:bg-zinc-800 p-2 rounded">
     <div class="md:flex md:justify-between grow">
       <div class="md:basis-1/3 md:shrink-0">
         <a :href="item.url" target="_blank">{{ owner }} / {{ name }}</a>

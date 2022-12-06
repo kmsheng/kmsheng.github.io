@@ -154,7 +154,7 @@ export const portfolioItems = addIds([
     url: 'https://www.super-landing.com/',
     title: 'Landing Official',
     date: '2021/09/06 - 2021/10/04',
-    tech: 'Rails, Vue3, SCSS',
+    techs: ['Rails', 'Vue3', 'SCSS'],
     desc: `The official landing website that introduces basic functions,\nsuccessful cases and pricing plans to interested merchants.\nIt allows them to apply for selling products online.`
   },
   {
@@ -162,7 +162,7 @@ export const portfolioItems = addIds([
     url: 'https://www.shareco.me/',
     title: 'Landing ( One Page Shop )',
     date: '2020/05/01 - present',
-    tech: 'Rails, Vue2, SCSS',
+    techs: ['Rails', 'Vue2', 'SCSS'],
     desc: `One page shopping website, a perfect entry into ecommerce.\nIt's fully responsible, let customers select products and pay on one web page.`
   },
   {
@@ -170,23 +170,30 @@ export const portfolioItems = addIds([
     url: 'https://superlanding.github.io/beyond/',
     title: 'Beyond',
     date: '2019/12/03 - 2021/08/10',
-    tech: 'VanillaJS, SCSS',
+    techs: ['VanillaJS', 'SCSS'],
     desc: `Foundational JavaScript UI components library.`
   },
   {
     src: 'adarsha-mobile-grid',
     url: 'https://adarsha.dharma-treasure.org/',
     title: 'ADARSHA',
-    date: '',
-    tech: 'React, SCSS, Node.js, MySQL, Redis, ElasticSearch, Docker, EC2、CloudFront, Elastic Beanstalk, Certificate Manager, Route53',
+    techs: ['React', 'SCSS', 'Node.js', 'MySQL', 'Redis',
+      'ElasticSearch', 'Docker', 'EC2','CloudFront',
+      'Elastic Beanstalk', 'Certificate Manager', 'Route53'],
     desc: `A web app that lets users read and conduct searches of ancient documents in a digital format.`
   },
   {
     src: 'ketaka-lite',
     url: 'https://github.com/karmapa/ketaka-lite',
     title: 'KETAKA Lite',
-    date: '',
-    tech: 'React, SCSS, Electron',
+    techs: ['React', 'SCSS', 'Electron'],
     desc: `A standalone application that enables file format conversion and file import and has a built-in simple editor allowing users edit their imported data.`
   },
+  {
+    src: 'pixnet-article-mobile-grid',
+    url: 'https://www.pixnet.net/pcard/mu574n6/article/9b14cbe0-0e54-11e9-9792-23a896807b0a',
+    title: 'PIXNET New Type Article',
+    techs: ['React', 'SCSS', 'PixFramework', 'MySQL'],
+    desc: `PIXNET's new article page for ecommerce blogging.`
+  }
 ])

@@ -32,7 +32,12 @@ const srcset = Object.keys(imageData)
     <div class="md:pl-5 pt-2 md:pt-0">
       <h3 class="font-bold text-2xl">{{ item.title }}</h3>
       <div class="whitespace-pre-wrap mt-2 mb-3">{{ item.desc }}</div>
-      <div class="text-xs mb-1">Tech: {{ item.tech }}</div>
+      <div class="flex flex-wrap items-start max-w-lg">
+        <span
+          v-for="tech in item.techs"
+          class="rounded bg-gray-100 dark:bg-zinc-800 py-1 px-2 text-xs mr-2 mb-2 inline-block whitespace-nowrap"
+        >{{ tech }}</span>
+      </div>
       <div v-if="item.date" class="text-xs text-gray-500 dark:text-gray-400">{{ item.date }}</div>
       <a v-if="item.url" class="mt-1 inline-block" :href="item.url" target="_blank">View Site</a>
     </div>
