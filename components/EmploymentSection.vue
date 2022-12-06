@@ -6,7 +6,6 @@ const getCompanyText = item => item.remote ? `${item.company}, Remote` : item.co
 <template>
   <div class="section">
     <h2 class="section-title">Employment</h2>
-
     <div v-for="item in employments" :key="item.id" class="my-2">
       <h3 class="font-semibold mb-1 title-square">{{ item.title }}</h3>
       <div class="border-l border-gray-300 pl-4">
@@ -19,6 +18,5 @@ const getCompanyText = item => item.remote ? `${item.company}, Remote` : item.co
         </ul>
       </div>
     </div>
-
   </div>
 </template>
