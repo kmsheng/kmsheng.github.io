@@ -19,7 +19,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', setVisibleClass, fals
     <a
       v-if="visible"
       @click.prevent="scrollToTop"
-      class="scroll-to-top-btn cursor-pointer fixed block right-10 bottom-10 text-white tex-3xl bg-black/60 backdrop-blur-sm w-10 h-10 text-center leading-10 rounded-lg" />
+      class="scroll-to-top-btn cursor-pointer fixed block right-4 bottom-20 md:right-10 md:bottom-20 text-white tex-3xl bg-black/60 backdrop-blur-sm w-10 h-10 text-center leading-10 rounded-lg" />
   </Transition>
 </template>
 
