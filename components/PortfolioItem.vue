@@ -28,8 +28,8 @@ const srcset = Object.keys(imageData)
       :srcset="srcset"
     />
     <div class="md:pl-5 pt-2 md:pt-0">
-      <h3 class="font-bold text-lg">{{ item.title }}</h3>
-      <div class="text-sm whitespace-pre-wrap mt-1 mb-2">{{ item.desc }}</div>
+      <h3 class="font-bold text-2xl">{{ item.title }}</h3>
+      <div class="whitespace-pre-wrap mt-2 mb-3">{{ item.desc }}</div>
       <div class="text-xs mb-1">Tech: {{ item.tech }}</div>
       <div class="text-xs text-gray-500">{{ item.date }}</div>
       <a v-if="item.url" class="mt-1 inline-block" :href="item.url" target="_blank">View Site</a>

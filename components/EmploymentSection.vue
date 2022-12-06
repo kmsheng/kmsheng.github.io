@@ -13,7 +13,7 @@ const getCompanyText = item => item.remote ? `${item.company}, Remote` : item.co
           <div class="text-xs">{{ getCompanyText(item) }}</div>
           <div class="text-xs text-gray-500 dark:text-gray-400 lg:mt-1">{{ item.date }}</div>
         </div>
-        <ul class="list-disc list-outside ml-4 mt-2 text-sm leading-6 dark:text-inherit">
+        <ul class="list-disc list-outside ml-4 mt-2 leading-6 dark:text-inherit">
           <li v-for="row in item.lines" :key="row.id" class="mb-1">{{ row.line }}</li>
         </ul>
       </div>
