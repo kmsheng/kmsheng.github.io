@@ -5,7 +5,7 @@ const props = defineProps({
     required: true
   }
 })
-const [, owner, name, type, num] = props.item.url.match(/https:\/\/github.com\/([^/]+)\/([^/]+)\/([^/]+)\/([^/]+)/)
+const [/* all */, owner, name, /* type */, /* num */] = props.item.url.match(/https:\/\/github.com\/([^/]+)\/([^/]+)\/([^/]+)\/([^/]+)/)
 </script>
 
 <template>

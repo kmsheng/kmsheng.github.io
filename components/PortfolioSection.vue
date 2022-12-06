@@ -1,5 +1,4 @@
 <script setup>
-import { employments } from '@/consts/app'
 </script>
 
 <template>
