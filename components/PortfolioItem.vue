@@ -1,4 +1,5 @@
 <script setup>
+import { toRefs } from 'vue'
 import loadAssets from '~/utils/loadAssets'
 const props = defineProps({
   item: {
@@ -6,7 +7,7 @@ const props = defineProps({
     required: true
   }
 })
-const { src } = props.item
+const { src } = toRefs(props).item
 const imageData = {
   '1x': loadAssets(`images/${src}.jpg`),
   '2x': loadAssets(`images/${src}@2x.jpg`),
@@ -26,7 +27,7 @@ const srcset = Object.keys(imageData)
       class="rounded"
       :src="imageData['1x']"
       :srcset="srcset"
-    />
+    >
     <div class="md:pl-5 pt-2 md:pt-0">
       <h3 class="font-bold text-2xl">{{ item.title }}</h3>
       <div class="whitespace-pre-wrap mt-2 mb-3">{{ item.desc }}</div>

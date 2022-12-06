@@ -1,5 +1,4 @@
 <script setup>
-import loadAssets from '~/utils/loadAssets'
 import { portfolioItems } from '~/consts/app'
 </script>
 
@@ -8,7 +7,7 @@ import { portfolioItems } from '~/consts/app'
     <h2 class="section-title">Portfolio</h2>
     <div>
       <portfolio-item
-        v-for="(item, i) in portfolioItems"
+        v-for="item in portfolioItems"
         :key="item.id"
         class="mt-4 mb-8"
         :item="item"
