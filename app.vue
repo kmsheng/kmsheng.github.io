@@ -8,18 +8,19 @@ onBeforeMount(() => Theme.init())
     <AppHeader />
 
     <div class="container ml-auto mr-auto px-4 bg-white py-12 px-6 md:px-10 dark:bg-[#111]/70">
-      <app-hero />
-      <link-section />
-      <employment-section />
-      <experience-section />
-      <pr-section />
-      <portfolio-section />
-      <app-ending />
+      <AppHero />
+      <LinkSection />
+      <EmploymentSection />
+      <ExperienceSection />
+      <PrSection />
+      <PortfolioSection />
+      <AppEnding />
     </div>
 
     <footer class="block container ml-auto mr-auto text-center pt-6 pb-10 text-sm">
       <a href="https://github.com/kmsheng/kmsheng.github.io">https://github.com/kmsheng/kmsheng.github.io</a>
     </footer>
+    <ScrollToTopBtn />
   </div>
 </template>
 
