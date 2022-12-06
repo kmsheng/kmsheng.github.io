@@ -9,6 +9,7 @@ onBeforeMount(() => Theme.init())
 
     <div class="container ml-auto mr-auto px-4 bg-white py-12 px-6 md:px-10 dark:bg-[#111]/70">
       <app-hero />
+      <link-section />
       <employment-section />
       <experience-section />
       <pr-section />

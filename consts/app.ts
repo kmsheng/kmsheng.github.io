@@ -1,5 +1,23 @@
 const addIds = rows => rows.map((row, i) => Object.assign({}, row, { id: i }))
 
+export const linkItems = addIds([
+  {
+    text: 'Open Source Contributor',
+    href: 'https://github.com/kmsheng',
+    icon: 'github'
+  },
+  {
+    text: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/kuan-sheng-7a260b86/',
+    icon: 'linkedin'
+  },
+  {
+    text: 'Resume',
+    href: 'https://drive.google.com/file/d/1mPwxXq49s2BjdMdrdnAvxtEL-tBOwBAP/view',
+    icon: 'googleDrive'
+  },
+])
+
 export const expItems = [
   { lang: 'JavaScript', year: 7 },
   { lang: 'HTML', year: 7 },
