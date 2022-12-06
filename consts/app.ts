@@ -7,8 +7,10 @@ export const expItems = [
   { lang: 'Node.js', year: 5 },
   { lang: 'Vue', year: 4 },
   { lang: 'React', year: 3 },
+  { lang: 'MySQL', year: 3 },
+  { lang: 'Redis', year: 3 },
   { lang: 'PHP', year: 2.5 },
-  { lang: 'Ruby', year: 1.5 }
+  { lang: 'Ruby', year: 1 }
 ]
 
 export const provenItems = addIds([

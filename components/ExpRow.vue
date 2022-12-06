@@ -10,6 +10,6 @@ defineProps({
 <template>
   <div class="flex justify-between even:bg-slate-50 dark:even:bg-[#262626] p-2 rounded">
     <div>{{ item.lang }}</div>
-    <div>{{ item.year }} years</div>
+    <div>{{ item.year }} {{ item.year > 1 ? 'years' : 'year' }}</div>
   </div>
 </template>
