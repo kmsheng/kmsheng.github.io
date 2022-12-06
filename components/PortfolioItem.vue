@@ -7,7 +7,8 @@ const props = defineProps({
     required: true
   }
 })
-const { src } = toRefs(props).item
+const { item } = toRefs(props)
+const { src } = item.value
 const imageData = {
   '1x': loadAssets(`images/${src}.jpg`),
   '2x': loadAssets(`images/${src}@2x.jpg`),
