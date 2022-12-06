@@ -10,7 +10,7 @@ import { portfolioItems } from '~/consts/app'
       <portfolio-item
         v-for="(item, i) in portfolioItems"
         :key="item.id"
-        class="my-8"
+        class="mt-4 mb-8"
         :item="item"
       />
     </div>

@@ -179,6 +179,14 @@ export const portfolioItems = addIds([
     title: 'ADARSHA',
     date: '',
     tech: 'React, SCSS, Node.js, MySQL, Redis, ElasticSearch, Docker, EC2、CloudFront, Elastic Beanstalk, Certificate Manager, Route53',
-    desc: `A web app that lets you read and conduct searches of ancient documents in a digital format.`
+    desc: `A web app that lets users read and conduct searches of ancient documents in a digital format.`
+  },
+  {
+    src: 'ketaka-lite',
+    url: 'https://github.com/karmapa/ketaka-lite',
+    title: 'KETAKA Lite',
+    date: '',
+    tech: 'React, SCSS, Electron',
+    desc: `A standalone application that enables file format conversion and file import and has a built-in simple editor allowing users edit their imported data.`
   },
 ])
