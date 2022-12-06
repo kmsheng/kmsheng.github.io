@@ -1,6 +1,6 @@
 <script setup>
 import { linkItems } from '~/consts/app'
-const iconClass = 'w-10 h-10 text-black dark:text-white'
+const iconClass = 'w-10 h-10 text-black dark:text-white shrink-0'
 </script>
 
 <template>
@@ -18,7 +18,7 @@ const iconClass = 'w-10 h-10 text-black dark:text-white'
       <IconGoogleDrive v-if="item.icon === 'googleDrive'" :class="iconClass" />
       <div class="ml-3">
         <div class="text-black dark:text-white text-lg font-semibold">{{ item.text }}</div>
-        <div class="text-xs">{{ item.href }}</div>
+        <div class="text-xs break-all">{{ item.href }}</div>
       </div>
     </a>
   </div>

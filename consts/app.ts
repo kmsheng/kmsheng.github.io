@@ -1,4 +1,4 @@
-const addIds = rows => rows.map((row, i) => Object.assign({}, row, { id: i }))
+import addIds from '~/utils/addIds'
 
 export const linkItems = addIds([
   {
@@ -146,4 +146,15 @@ export const employments = addIds([
       'Involved in the DevOps process with daily deployments.'
     ].map((line, i) => Object.assign({}, { line, id: i }))
   },
+])
+
+export const portfolioItems = addIds([
+  {
+    src: 'official-desktop',
+    url: 'https://www.super-landing.com/',
+    title: 'Landing Official',
+    date: '2021/09/06 - 2021/10/04',
+    tech: 'Rails, Vue3, SCSS',
+    desc: `The official landing website that introduces basic functions, successful cases and pricing plans.\nIt allows interested merchants to apply for selling products online.`
+  }
 ])
