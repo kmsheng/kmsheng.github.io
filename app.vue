@@ -1,4 +1,5 @@
 <script setup>
+import ogImage from '~/assets/images/ogImage.png'
 import { useHead } from '@vueuse/head'
 import Theme from '~/models/Theme'
 onBeforeMount(() => Theme.init())
@@ -7,7 +8,7 @@ useHead({
   title: 'kmsheng\'s portfolio',
   meta: [{
     name: 'og:image',
-    content: ''
+    content: ogImage
   }, {
     name: 'og:title',
     content: 'kmsheng\'s portfolio'
