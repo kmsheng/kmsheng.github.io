@@ -25,7 +25,7 @@ const srcset = Object.keys(imageData)
 <template>
   <div class="md:flex">
     <img
-      class="rounded"
+      class="portfolio-item__img rounded"
       loading="lazy"
       :alt="item.alt"
       :src="imageData['1x']"
@@ -45,3 +45,10 @@ const srcset = Object.keys(imageData)
     </div>
   </div>
 </template>
+
+<style lang="css" scoped>
+.portfolio-item__img {
+  width: 368px;
+  height: 304px;
+}
+</style>
