@@ -1,31 +1,15 @@
 <script setup>
-import ogImage from '~/assets/images/ogImage.png'
+import { head } from '~/consts/app'
 import { useHead } from '@vueuse/head'
 import Theme from '~/models/Theme'
-onBeforeMount(() => Theme.init())
-
-const title = 'kmsheng\'s portfolio'
-const desc = 'Craft solid and scalable frontend products with great user experiences.'
-
-useHead({
-  title,
-  htmlAttrs: {
-    lang: 'en'
-  },
-  meta: [{
-    name: 'description',
-    content: desc
-  }, {
-    name: 'og:image',
-    content: ogImage
-  }, {
-    name: 'og:title',
-    content: 'kmsheng\'s portfolio'
-  }, {
-    name: 'og:description',
-    content: desc
-  }]
+import registerServiceWorker from '~/utils/registerServiceWorker'
+onBeforeMount(() => {
+  registerServiceWorker()
+  Theme.init()
 })
+
+useHead(head)
+
 </script>
 
 <template>

@@ -9,28 +9,32 @@ const props = defineProps({
 })
 const { item } = toRefs(props)
 const { src } = item.value
-const imageData = {
-  '1x': loadAssets(`images/${src}.jpg`),
-  '2x': loadAssets(`images/${src}@2x.jpg`),
-  '3x': loadAssets(`images/${src}@3x.jpg`)
-}
-const srcset = Object.keys(imageData)
-  .map((k, i) => {
-    const key = `${i + 1}x`
-    return imageData[key] + ' ' + key
-  })
-  .join(',')
+
+const imageSet = ['jpg', 'webp', 'avif']
+  .reduce((obj, ext) => {
+    obj[ext] = [
+      loadAssets(`images/${src}.${ext}`),
+      loadAssets(`images/${src}@2x.${ext}`),
+      loadAssets(`images/${src}@3x.${ext}`)
+    ].map((path, i) => `${path} ${i + 1}x`).join(', ')
+    return obj
+  }, {})
+
 </script>
 
 <template>
   <div class="md:flex">
-    <img
-      class="portfolio-item__img rounded"
-      loading="lazy"
-      :alt="item.alt"
-      :src="imageData['1x']"
-      :srcset="srcset"
-    >
+    <picture class="shrink-0">
+      <source type="image/avif" :srcset="imageSet['avif']">
+      <source type="image/webp" :srcset="imageSet['webp']">
+      <img
+        class="portfolio-item__img rounded"
+        loading="lazy"
+        :alt="item.alt"
+        :src="src"
+        :srcset="imageSet['jpg']"
+      >
+    </picture>
     <div class="md:pl-5 pt-2 md:pt-0">
       <h3 class="font-bold text-2xl">{{ item.title }}</h3>
       <div class="whitespace-pre-wrap mt-2 mb-3">{{ item.desc }}</div>
