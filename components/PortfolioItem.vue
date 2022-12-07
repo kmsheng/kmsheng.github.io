@@ -37,6 +37,7 @@ const srcset = Object.keys(imageData)
       <div class="flex flex-wrap items-start max-w-lg">
         <span
           v-for="tech in item.techs"
+          :key="tech"
           class="rounded bg-gray-100 dark:bg-zinc-800 py-1 px-2 text-xs mr-2 mb-2 inline-block whitespace-nowrap"
         >{{ tech }}</span>
       </div>
