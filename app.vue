@@ -6,6 +6,9 @@ onBeforeMount(() => Theme.init())
 
 useHead({
   title: 'kmsheng\'s portfolio',
+  htmlAttrs: {
+    lang: 'en'
+  },
   meta: [{
     name: 'og:image',
     content: ogImage
