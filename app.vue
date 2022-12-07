@@ -10,6 +10,9 @@ useHead({
     lang: 'en'
   },
   meta: [{
+    name: 'description',
+    content: 'Craft solid and scalable frontend products with great user experiences.'
+  }, {
     name: 'og:image',
     content: ogImage
   }, {
