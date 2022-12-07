@@ -4,9 +4,18 @@ import { useHead } from '@vueuse/head'
 import Theme from '~/models/Theme'
 onBeforeMount(() => Theme.init())
 
+const title = 'kmsheng\'s portfolio'
+const desc = 'Craft solid and scalable frontend products with great user experiences.'
+
 useHead({
-  title: 'kmsheng\'s portfolio',
+  title,
+  htmlAttrs: {
+    lang: 'en'
+  },
   meta: [{
+    name: 'description',
+    content: desc
+  }, {
     name: 'og:image',
     content: ogImage
   }, {
@@ -14,7 +23,7 @@ useHead({
     content: 'kmsheng\'s portfolio'
   }, {
     name: 'og:description',
-    content: 'Craft solid and scalable frontend products with great user experiences.'
+    content: desc
   }]
 })
 </script>

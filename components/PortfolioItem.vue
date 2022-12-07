@@ -25,7 +25,9 @@ const srcset = Object.keys(imageData)
 <template>
   <div class="md:flex">
     <img
-      class="rounded"
+      class="portfolio-item__img rounded"
+      loading="lazy"
+      :alt="item.alt"
       :src="imageData['1x']"
       :srcset="srcset"
     >
@@ -35,6 +37,7 @@ const srcset = Object.keys(imageData)
       <div class="flex flex-wrap items-start max-w-lg">
         <span
           v-for="tech in item.techs"
+          :key="tech"
           class="rounded bg-gray-100 dark:bg-zinc-800 py-1 px-2 text-xs mr-2 mb-2 inline-block whitespace-nowrap"
         >{{ tech }}</span>
       </div>
@@ -43,3 +46,10 @@ const srcset = Object.keys(imageData)
     </div>
   </div>
 </template>
+
+<style lang="css" scoped>
+.portfolio-item__img {
+  width: 368px;
+  height: 304px;
+}
+</style>
