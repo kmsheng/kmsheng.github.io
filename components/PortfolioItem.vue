@@ -24,7 +24,7 @@ const imageSet = ['jpg', 'webp', 'avif']
 
 <template>
   <div class="md:flex">
-    <picture>
+    <picture class="shrink-0">
       <source type="image/avif" :srcset="imageSet['avif']">
       <source type="image/webp" :srcset="imageSet['webp']">
       <img
