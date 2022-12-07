@@ -27,6 +27,7 @@ const srcset = Object.keys(imageData)
     <img
       class="rounded"
       loading="lazy"
+      :alt="item.alt"
       :src="imageData['1x']"
       :srcset="srcset"
     >
