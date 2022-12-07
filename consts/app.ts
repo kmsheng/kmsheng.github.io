@@ -151,6 +151,7 @@ export const employments = addIds([
 export const portfolioItems = addIds([
   {
     src: 'official-desktop',
+    alt: 'Landing Official Thumbnail',
     url: 'https://www.super-landing.com/',
     title: 'Landing Official',
     date: '2021/09/06 - 2021/10/04',
@@ -159,6 +160,7 @@ export const portfolioItems = addIds([
   },
   {
     src: 'landing-mobile-mansry',
+    alt: 'Landing ( One Page Shop ) Thumbnail',
     url: 'https://www.shareco.me/',
     title: 'Landing ( One Page Shop )',
     date: '2020/05/01 - present',
@@ -167,6 +169,7 @@ export const portfolioItems = addIds([
   },
   {
     src: 'beyond-dark',
+    alt: 'Beyond Thumbnail',
     url: 'https://superlanding.github.io/beyond/',
     title: 'Beyond',
     date: '2019/12/03 - 2021/08/10',
@@ -175,6 +178,7 @@ export const portfolioItems = addIds([
   },
   {
     src: 'adarsha-mobile-grid',
+    alt: 'ADARSHA Thumbnail',
     url: 'https://adarsha.dharma-treasure.org/',
     title: 'ADARSHA',
     techs: ['React', 'SCSS', 'Node.js', 'MySQL', 'Redis',
@@ -184,6 +188,7 @@ export const portfolioItems = addIds([
   },
   {
     src: 'ketaka-lite',
+    alt: 'KETAKA Lite Thumbnail',
     url: 'https://github.com/karmapa/ketaka-lite',
     title: 'KETAKA Lite',
     techs: ['React', 'SCSS', 'Electron'],
@@ -191,6 +196,7 @@ export const portfolioItems = addIds([
   },
   {
     src: 'pixnet-article-mobile-grid',
+    alt: 'PIXNET New Type Article Thumbnail',
     url: 'https://www.pixnet.net/pcard/mu574n6/article/9b14cbe0-0e54-11e9-9792-23a896807b0a',
     title: 'PIXNET New Type Article',
     techs: ['React', 'SCSS', 'PixFramework', 'MySQL'],
