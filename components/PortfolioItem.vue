@@ -16,7 +16,7 @@ const imageSet = ['jpg', 'webp', 'avif']
       loadAssets(`images/${src}.${ext}`),
       loadAssets(`images/${src}@2x.${ext}`),
       loadAssets(`images/${src}@3x.${ext}`)
-    ].map((path, i) => `${path} ${i}x`).join(', ')
+    ].map((path, i) => `${path} ${i + 1}x`).join(', ')
     return obj
   }, {})
 
