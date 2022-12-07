@@ -26,6 +26,7 @@ const srcset = Object.keys(imageData)
   <div class="md:flex">
     <img
       class="rounded"
+      loading="lazy"
       :src="imageData['1x']"
       :srcset="srcset"
     >
