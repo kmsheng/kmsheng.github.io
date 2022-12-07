@@ -2,9 +2,14 @@
 import { head } from '~/consts/app'
 import { useHead } from '@vueuse/head'
 import Theme from '~/models/Theme'
-onBeforeMount(() => Theme.init())
+import registerServiceWorker from '~/utils/registerServiceWorker'
+onBeforeMount(() => {
+  registerServiceWorker()
+  Theme.init()
+})
 
 useHead(head)
+
 </script>
 
 <template>
