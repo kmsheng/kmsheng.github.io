@@ -4,7 +4,7 @@ const toggleTheme = () => Theme.toggle()
 </script>
 
 <template>
-  <button class="theme-toggle" @click="toggleTheme">
+  <button class="theme-toggle" aria-label="Theme Toggle" @click="toggleTheme">
     <IconSunMoon />
   </button>
 </template>
