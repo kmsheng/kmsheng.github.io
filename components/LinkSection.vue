@@ -17,7 +17,7 @@ const iconClass = 'w-10 h-10 text-black dark:text-white shrink-0'
       <IconLinkedIn v-if="item.icon === 'linkedin'" :class="iconClass" />
       <IconGoogleDrive v-if="item.icon === 'googleDrive'" :class="iconClass" />
       <div class="ml-3">
-        <div class="text-black dark:text-white text-lg font-semibold">{{ item.text }}</div>
+        <div class="text-black dark:text-white text-lg font-semibold">{{ $t(item.i18n) }}</div>
         <div class="text-xs break-all">{{ item.href }}</div>
       </div>
     </a>
