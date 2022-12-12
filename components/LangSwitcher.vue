@@ -9,7 +9,7 @@ const classname = computed(() => ({
 
 <template>
   <nuxt-link
-    class="lang-switcher transition-all duration-300"
+    class="lang-switcher z-10 transition-all duration-300"
     :class="classname"
     :to="localePath(locale === 'en' ? '/zh/' : '/')"
   >
