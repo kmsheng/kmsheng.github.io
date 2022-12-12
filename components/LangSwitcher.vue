@@ -19,9 +19,9 @@ const classname = computed(() => ({
 
 <style lang="css" scoped>
 .lang-switcher {
-  transform: rotateY(-180deg);
+  transform: scaleX(-1);
 }
 .lang-switcher--reversed {
-  transform: rotateY(0);
+  transform: scaleX(1);
 }
 </style>
