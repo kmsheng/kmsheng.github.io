@@ -140,7 +140,7 @@ export const provenItems = addIds([
 
 export const employments = addIds([
   {
-    title: 'Senior Front-end Engineer',
+    title: 'senior-frontend-engineer',
     company: 'SPEEDING ROCKET',
     remote: true,
     date: 'May 2019 - Sep. 2022',
@@ -154,7 +154,7 @@ export const employments = addIds([
     ].map((line, i) => Object.assign({}, { line, id: i }))
   },
   {
-    title: 'Senior Engineer',
+    title: 'senior-engineer',
     company: 'MOXA',
     date: 'May 2018 - Sep. 2018',
     lines: [
@@ -164,7 +164,7 @@ export const employments = addIds([
     ].map((line, i) => Object.assign({}, { line, id: i }))
   },
   {
-    title: 'Software Consultant',
+    title: 'software-consultant',
     company: 'Dharma Treasure',
     remote: true,
     date: 'Jan. 2015 - May 2018',
@@ -177,7 +177,7 @@ export const employments = addIds([
     ].map((line, i) => Object.assign({}, { line, id: i }))
   },
   {
-    title: 'Engineer',
+    title: 'engineer',
     company: 'MOXA',
     date: 'Mar. 2014 - Nov. 2014',
     lines: [
@@ -186,7 +186,7 @@ export const employments = addIds([
     ].map((line, i) => Object.assign({}, { line, id: i }))
   },
   {
-    title: 'Senior Engineer',
+    title: 'senior-engineer',
     company: 'PIXNET',
     date: 'Mar. 2012 - Mar. 2014',
     lines: [
