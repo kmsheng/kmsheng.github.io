@@ -4,7 +4,7 @@ import { portfolioItems } from '~/consts/app'
 
 <template>
   <div class="section">
-    <h2 class="section-title">Portfolio</h2>
+    <h2 class="section-title">{{ $t('portfolio') }}</h2>
     <div>
       <portfolio-item
         v-for="item in portfolioItems"
