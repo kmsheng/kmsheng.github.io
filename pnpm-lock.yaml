@@ -7,6 +7,7 @@ specifiers:
   autoprefixer: ^10.4.13
   eslint: ^8.29.0
   eslint-plugin-vue: ^9.8.0
+  lodash.range: ^3.2.0
   nuxt: 3.0.0
   postcss: ^8.4.19
   tailwindcss: ^3.2.4
@@ -14,6 +15,7 @@ specifiers:
 dependencies:
   '@vueuse/core': 9.6.0_vue@3.2.45
   '@vueuse/head': 1.0.20_vue@3.2.45
+  lodash.range: 3.2.0
 
 devDependencies:
   '@nuxtjs/i18n': 8.0.0-beta.7_rollup@2.79.1+vue@3.2.45
@@ -3200,6 +3202,10 @@ packages:
   /lodash.pick/4.4.0:
     resolution: {integrity: sha512-hXt6Ul/5yWjfklSGvLQl8vM//l3FtyHZeuelpzK6mm99pNvN9yTDruNZPEJZD1oWrqo+izBmB7oUfWgcCX7s4Q==}
     dev: true
+
+  /lodash.range/3.2.0:
+    resolution: {integrity: sha512-Fgkb7SinmuzqgIhNhAElo0BL/R1rHCnhwSZf78omqSwvWqD0kD2ssOAutQonDKH/ldS8BxA72ORYI09qAY9CYg==}
+    dev: false
 
   /lodash.template/4.5.0:
     resolution: {integrity: sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==}

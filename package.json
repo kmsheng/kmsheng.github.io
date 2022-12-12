@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^9.6.0",
-    "@vueuse/head": "^1.0.20"
+    "@vueuse/head": "^1.0.20",
+    "lodash.range": "^3.2.0"
   }
 }
