@@ -9,6 +9,7 @@
     "lint": "eslint **/*.{vue,ts}"
   },
   "devDependencies": {
+    "@nuxtjs/i18n": "8.0.0-beta.7",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.29.0",
     "eslint-plugin-vue": "^9.8.0",

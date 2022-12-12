@@ -51,20 +51,20 @@ export const head = {
 
 export const linkItems = addIds([
   {
-    text: 'Open Source Contributor',
+    i18n: 'open-source-contributor',
     href: 'https://github.com/kmsheng',
     icon: 'github'
   },
   {
-    text: 'LinkedIn',
+    i18n: 'linkedin',
     href: 'https://www.linkedin.com/in/kuan-sheng-7a260b86/',
     icon: 'linkedin'
   },
   {
-    text: 'Resume',
+    i18n: 'resume',
     href: 'https://drive.google.com/file/d/1mPwxXq49s2BjdMdrdnAvxtEL-tBOwBAP/view',
     icon: 'googleDrive'
-  },
+  }
 ])
 
 export const expItems = [
