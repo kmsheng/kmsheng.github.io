@@ -1,5 +1,6 @@
 import addIds from '~/utils/addIds'
 import ogImage from '~/assets/images/ogImage.png'
+import range from 'lodash.range'
 
 const title = 'kmsheng\'s portfolio'
 const desc = 'Craft solid and scalable frontend products with great user experiences.'
@@ -51,20 +52,20 @@ export const head = {
 
 export const linkItems = addIds([
   {
-    text: 'Open Source Contributor',
+    i18n: 'open-source-contributor',
     href: 'https://github.com/kmsheng',
     icon: 'github'
   },
   {
-    text: 'LinkedIn',
+    i18n: 'linkedin',
     href: 'https://www.linkedin.com/in/kuan-sheng-7a260b86/',
     icon: 'linkedin'
   },
   {
-    text: 'Resume',
+    i18n: 'resume',
     href: 'https://drive.google.com/file/d/1mPwxXq49s2BjdMdrdnAvxtEL-tBOwBAP/view',
     icon: 'googleDrive'
-  },
+  }
 ])
 
 export const expItems = [
@@ -140,60 +141,36 @@ export const provenItems = addIds([
 
 export const employments = addIds([
   {
-    title: 'Senior Front-end Engineer',
+    title: 'senior-frontend-engineer',
     company: 'SPEEDING ROCKET',
     remote: true,
     date: 'May 2019 - Sep. 2022',
-    lines: [
-      'Improved the efficiency of the stockholders\' daily workflows drastically.',
-      'Reviewed the front-end architecture and suggested insightful action plans.',
-      'Designed and shipped an admin interface for ecommerce merchants.',
-      'Developed foundational JavaScript UI component libraries for shipping new features faster.',
-      'Crafted a Rails-friendly server-side rendering shopping site with airbnb’ s Hypernova to improve SEO rankings.',
-      'Rewrote the whole admin codebase with Vue.js from the previous CoffeeScript one.'
-    ].map((line, i) => Object.assign({}, { line, id: i }))
+    lines: range(6).map((i) => ({ line: `rocket-${i + 1}`, id: i }))
   },
   {
-    title: 'Senior Engineer',
+    title: 'senior-engineer',
     company: 'MOXA',
     date: 'May 2018 - Sep. 2018',
-    lines: [
-      'Engineered the admin interface of IOT product for device data monitoring.',
-      'Reviewed and suggested action plans for bringing the UX culture to the company.',
-      'Worked closely with UI designer and product manager to brainstorm the IOT product with UX in mind.'
-    ].map((line, i) => Object.assign({}, { line, id: i }))
+    lines: range(3).map((i) => ({ line: `moxa2-${i + 1}`, id: i }))
   },
   {
-    title: 'Software Consultant',
+    title: 'software-consultant',
     company: 'Dharma Treasure',
     remote: true,
     date: 'Jan. 2015 - May 2018',
-    lines: [
-      'Developed web educational materials to inspire mentees.',
-      'Recruited talented engineers to maintain projects.',
-      'Managed outsourcing contracts to ensure company projects were finished on time.',
-      'Worked with other engineers to create better products.',
-      'Embraced the remote-first culture and adapted asynchronous, proactive communication.'
-    ].map((line, i) => Object.assign({}, { line, id: i }))
+    lines: range(5).map((i) => ({ line: `dt-${i + 1}`, id: i }))
   },
   {
-    title: 'Engineer',
+    title: 'engineer',
     company: 'MOXA',
     date: 'Mar. 2014 - Nov. 2014',
-    lines: [
-      'Brainstormed the IOT product with a product manager for clients.',
-      'Created an admin interface of the IOT product with AngularJS.'
-    ].map((line, i) => Object.assign({}, { line, id: i }))
+    lines: range(2).map((i) => ({ line: `moxa-${i + 1}`, id: i }))
   },
   {
-    title: 'Senior Engineer',
+    title: 'senior-engineer',
     company: 'PIXNET',
     date: 'Mar. 2012 - Mar. 2014',
-    lines: [
-      'Developed and shipped an ecommerce site with PHP.',
-      'Created an album uploader with VanillaJS.',
-      'Involved in the DevOps process with daily deployments.'
-    ].map((line, i) => Object.assign({}, { line, id: i }))
+    lines: range(3).map((i) => ({ line: `pixnet-${i + 1}`, id: i }))
   },
 ])
 
@@ -202,53 +179,53 @@ export const portfolioItems = addIds([
     src: 'official-desktop',
     alt: 'Landing Official Thumbnail',
     url: 'https://www.super-landing.com/',
-    title: 'Landing Official',
+    title: 'landing-official',
     date: '2021/09/06 - 2021/10/04',
     techs: ['Rails', 'Vue3', 'SCSS'],
-    desc: `The official landing website that introduces basic functions,\nsuccessful cases and pricing plans to interested merchants.\nIt allows them to apply for selling products online.`
+    desc: 'landing-official-desc'
   },
   {
     src: 'landing-mobile-mansry',
     alt: 'Landing ( One Page Shop ) Thumbnail',
     url: 'https://www.shareco.me/',
-    title: 'Landing ( One Page Shop )',
+    title: 'landing',
     date: '2020/05/01 - present',
     techs: ['Rails', 'Vue2', 'SCSS'],
-    desc: `One page shopping website, a perfect entry into ecommerce.\nIt's fully responsible, let customers select products and pay on one web page.`
+    desc: 'landing-desc'
   },
   {
     src: 'beyond-dark',
     alt: 'Beyond Thumbnail',
     url: 'https://superlanding.github.io/beyond/',
-    title: 'Beyond',
+    title: 'beyond',
     date: '2019/12/03 - 2021/08/10',
     techs: ['VanillaJS', 'SCSS'],
-    desc: `Foundational JavaScript UI components library.`
+    desc: 'beyond-desc'
   },
   {
     src: 'adarsha-mobile-grid',
     alt: 'ADARSHA Thumbnail',
     url: 'https://adarsha.dharma-treasure.org/',
-    title: 'ADARSHA',
+    title: 'adarsha',
     techs: ['React', 'SCSS', 'Node.js', 'MySQL', 'Redis',
       'ElasticSearch', 'Docker', 'EC2','CloudFront',
       'Elastic Beanstalk', 'Certificate Manager', 'Route53'],
-    desc: `A web app that lets users read and conduct searches of ancient documents in a digital format.`
+    desc: 'adarsha-desc'
   },
   {
     src: 'ketaka-lite',
     alt: 'KETAKA Lite Thumbnail',
     url: 'https://github.com/karmapa/ketaka-lite',
-    title: 'KETAKA Lite',
+    title: 'ketaka-lite',
     techs: ['React', 'SCSS', 'Electron'],
-    desc: `A standalone application that enables file format conversion and file import and has a built-in simple editor allowing users edit their imported data.`
+    desc: 'ketaka-lite-desc'
   },
   {
     src: 'pixnet-article-mobile-grid',
     alt: 'PIXNET New Type Article Thumbnail',
     url: 'https://www.pixnet.net/pcard/mu574n6/article/9b14cbe0-0e54-11e9-9792-23a896807b0a',
-    title: 'PIXNET New Type Article',
+    title: 'pixnet-article',
     techs: ['React', 'SCSS', 'PixFramework', 'MySQL'],
-    desc: `PIXNET's new article page for ecommerce blogging.`
+    desc: 'pixnet-article-desc'
   }
 ])
