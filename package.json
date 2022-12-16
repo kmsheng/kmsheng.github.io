@@ -6,7 +6,9 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint **/*.{vue,ts}"
+    "lint": "eslint **/*.{vue,ts}",
+    "predeploy": "pnpm build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@nuxtjs/i18n": "8.0.0-beta.7",
@@ -15,7 +17,8 @@
     "eslint-plugin-vue": "^9.8.0",
     "nuxt": "3.0.0",
     "postcss": "^8.4.19",
-    "tailwindcss": "^3.2.4"
+    "tailwindcss": "^3.2.4",
+    "gh-pages": "^4.0.0"
   },
   "dependencies": {
     "@vueuse/core": "^9.6.0",
